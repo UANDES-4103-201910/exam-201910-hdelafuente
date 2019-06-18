@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-user = User.create(first_name: "Hugo", last_name: "de la Fuente", email: "h@h.cl")
+user = User.create(first_name: "Hugo", last_name: "de la Fuente", email: "h@h.cl", password: "12345678")
 
 address = Address.create(phone: "+569 1234 5678",
                          address_line_1: "Calle 1",
@@ -25,12 +25,12 @@ p1 = Product.create(brand: "Brand 1", model: "model 1",
                long_description: "this is the long description for product 1, it's quite bad, don't buy it")
 
 p2 = Product.create(brand: "Brand 2", model: "model 2",
-               variant: "prepay_option", price: 1500000,
+               variant: "pre_pay", price: 1500000,
                short_description: "short descr for product 2",
                long_description: "this is the long description for product 2, it's kinda good, a bit expensive though")
 
 p3 = Product.create(brand: "Brand 3", model: "model 3",
-               variant: "subscription", price: 20000,
+               variant: "subs", price: 20000,
                short_description: "short descr for product 3",
                long_description: "this is the long description for product 3, it's quite good, buy it")
 
